@@ -80,7 +80,6 @@ public class FileExplorer {
 		// Checks whether path exists
 		if (path.exists()) {
 			FilenameFilter filter = new FilenameFilter() {
-				@Override
 				public boolean accept(File dir, String filename) {
 					File sel = new File(dir, filename);
 					// Filters based on whether the file is hidden or not
@@ -176,7 +175,6 @@ public class FileExplorer {
 
 		builder.setTitle("Selected: " + path.getPath());
 		builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
-			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				chosenFile = fileList[which].file;
 				File sel = new File(path + "/" + chosenFile);

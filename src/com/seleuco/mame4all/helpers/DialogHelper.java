@@ -225,7 +225,6 @@ public class DialogHelper {
 	    	    }	    	 
 	    	});
 	    	builder.setOnCancelListener(new  DialogInterface.OnCancelListener() {				
-				@Override
 				public void onCancel(DialogInterface dialog) {
   	        	    DialogHelper.savedDialog = DIALOG_NONE;
   	        	    Emulator.resume();
@@ -268,7 +267,6 @@ public class DialogHelper {
 	    	    }
 	    	});
 	    	builder.setOnCancelListener(new  DialogInterface.OnCancelListener() {				
-				@Override
 				public void onCancel(DialogInterface dialog) {
   	        	    DialogHelper.savedDialog = DIALOG_NONE;
   	        	    Emulator.resume();

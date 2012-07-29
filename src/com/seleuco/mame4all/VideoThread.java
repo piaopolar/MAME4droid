@@ -90,7 +90,6 @@ public class VideoThread implements Runnable {
 		}		
 	}
 	
-	@Override
 	public void run() {
 
 		while (run) 

@@ -52,7 +52,6 @@ public class SoundThread implements Runnable {
 		t.start();
 	}
 
-	@Override
 	public void run() {
 
 		while (true) {
